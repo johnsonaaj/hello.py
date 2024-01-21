@@ -1,2 +1,2 @@
-def  generic_hi()
+def  generic_hi():
  return "Hello, " + '' 
