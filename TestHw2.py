@@ -15,7 +15,17 @@ c3= Card(2, "squiggle", "blue", "striped")
 
 """Tests that we can initialize cards w/ number/color/shading/shape"""
 
+
 def test_str():
+
+>>> str(c1)
+Card(1, green, empty, diamond)
+
+>>> str(c2)
+Card(3, oval, purple, solid)
+
+>>> str(c3)
+Card(2, squiggle, blue, striped)
 
 """test that we can get a good string representation of Card instances"""
 
