@@ -1,5 +1,9 @@
 class TestCard(unittest.TestCase):
+
 def test_init():
+c1 = Card(2, "green", "striped", "diamond")
+>>> c1.number
+2
 """Tests that we can initialize cards w/ number/color/shading/shape"""
 
 def test_str():
