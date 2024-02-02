@@ -2,12 +2,12 @@ class TestCard(unittest.TestCase):
 
   def test_init():
    c1 = Card(1, "green", "empty", "diamond")
-    >>> c1.number
-    1
+   >>> c1.number
+   1
 
    c2= Card(3, "oval", "purple", "solid")
-    >>> c2.number 
-    3
+   >>> c2.number 
+   3
 
    c3= Card(2, "squiggle", "blue", "striped")
     >>> c3.number 
