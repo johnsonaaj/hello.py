@@ -1,5 +1,5 @@
 def generic_hi(name)
- default = World 
+ default = "World"
  input = raw_input("") 
  if not input:
   input=default
