@@ -5,4 +5,4 @@ def generic_hi (name):
    name = "world!"
   return greeting  
 
-print(generic_hi())
+print(generic_hi(name))
