@@ -1,5 +1,5 @@
 
- def generic_hi (name): 
+def generic_hi (name): 
   name = "Hello, " + name + "!"
   if len(name) == 0 :
    name = "world!"
