@@ -1,6 +1,5 @@
 def generic_hi(name):
- default = "World"
- input = ("") 
- if not input:
-  input=default
- return "Hello,", input 
+ user_input = ("") 
+  if len(user_input) == 0 :
+    user_input = "World"
+ return "Hello,", user_input 
