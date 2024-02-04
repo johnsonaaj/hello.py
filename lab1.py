@@ -1,3 +1,3 @@
-def generic_hi add(name): 
+def generic_hi name(name): 
     greeting = "Hello, " + name + "!" 
     return greeting  
