@@ -1,10 +1,9 @@
 
 def generic_hi (name): 
-  greeting = "Hello, " + name + "!"
-  if len(name) == 0 :
+if len(name) == 0 :
    name = "world!"
+  greeting = "Hello, " + name + "!"
+  
   return greeting  
 
-me = generic_hi() 
-print(me) 
  
