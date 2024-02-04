@@ -1,6 +1,7 @@
-def generic_hi(name): 
-     if len(name) == 0 :
-      name= "world!"
-    name = "Hello, " + name + "!" 
-    return name 
-    
+
+ def generic_hi (name): 
+  name = "Hello, " + name + "!"
+  if len(name) == 0 :
+   name = "world!"
+generic_hi() = name
+  return name 
