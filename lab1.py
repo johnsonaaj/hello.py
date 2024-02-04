@@ -3,4 +3,4 @@ def generic_hi(name):
  input = raw_input("") 
  if not input:
   input=default
-    return "Hello", input 
+ return "Hello", input 
