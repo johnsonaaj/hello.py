@@ -1,3 +1,3 @@
-def  generic_hi():
+def  generic_hi(name):
  name= input("")
  return "Hello", + name 
