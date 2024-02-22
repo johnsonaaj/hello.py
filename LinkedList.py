@@ -1,8 +1,40 @@
-                node = node.next
+class LinkedList:
+    def __init__(self):
+        self._head = None
 
-            item = node.next.data # extract the data
-            node.next = None      # detach the last node
-            return item           # return the data
+    def add_first(self, data):
+        self._head = Node(data, next=self._head)
+
+    def remove_first(self):
+        if self._head is None:
+            raise Exception("Linked list is empty")
+        data = self._head.data
+        self._head = self._head.next
+        return data
+
+    def add_last(self, data):
+        if self._head is None:
+            self._head = Node(data)
+        else:
+            current = self._head
+            while current.next:
+                current = current.next
+            current.next = Node(data)
+
+    def remove_last(self):
+        if self._head is None:
+            raise Exception("Linked list is empty")
+        elif self._head.next is None:
+            data = self._head.data
+            self._head = None
+            return data
+        else:
+            current = self._head
+            while current.next.next:
+                current = current.next
+            data = current.next.data
+            current.next = None
+            return data
 
 
 if __name__ == '__main__':
