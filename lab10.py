@@ -27,7 +27,7 @@ class PQ_OL:
  def insert(self, item, priority):
   self.list.append(Entry(item,priority))
   self.list.sort(reverse = True)
- def find_min(self)
+ def find_min(self):
    return self.list[-1]
  def remove_min (self):
   return self.list.pop(-1)
