@@ -28,6 +28,6 @@ class PQ_OL:
   self.list.append(Entry(item,priority))
   self.list.sort(reverse = True)
  def find_min(self)
-  return self.list[-1]
+   return self.list[-1]
  def remove_min (self):
   return self.list.pop(-1)
