@@ -10,7 +10,7 @@ class Entry:
    return self.priority == other.priority and self.item == other.item
 
 class PQ_UL:
- def_init_(self):
+ def__init__(self):
   self.list=[]
  def __len__(self):
   return len(self.list)
