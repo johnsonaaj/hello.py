@@ -23,7 +23,7 @@ class PQ_UL:
 
 class PQ_OL:
  def __init__(self):
-  self.list[]
+  self.list=[]
  def insert(self, item, priority):
   self.list.append(Entry(item,priority))
   self.list.sort(reverse = True)
