@@ -6,9 +6,8 @@ class Entry:
  def lt(self, other):
   return self.priority < other.priority
 
-  PQ.UL = PriorityQueue(unordered_list)
-  PQ.OL = PriorityQueue(ordered_list)
-
+ def eq(self, other):
+   return self.priority == other.priority and   self.item == other.item
 class PriorityQueue(List):
  def __len__(self):
   return len(self)
