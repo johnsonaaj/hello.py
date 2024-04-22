@@ -7,17 +7,27 @@ class Entry:
   return self.priority < other.priority
 
  def eq(self, other):
-   return self.priority == other.priority and   self.item == other.item
-class PriorityQueue(List):
+   return self.priority == other.priority and self.item == other.item
+
+class PQ_UL:
+ def_init_(self):
+  self.list=[]
  def __len__(self):
-  return len(self)
-
+  return len(self.list)
  def insert(self, item, priority):
-  self.append(Entry(item, priority))
-
+  self.list.append(Entry(item, priority))
  def find_min(self):
-  return self.min()
-
+  return self.list.min()
  def remove_min(self):
-  return self.pop(0)
+  return self.list.pop(0)
 
+class PQ_OL:
+ def_init_(self):
+  self.list[]
+ def insert(self, item, priority):
+  self.list.append(Entry(item,priority))
+  self.list.sort(reverse = True)
+ def find_min(self)
+  return self.list[-1]
+ def remove_min (self):
+  return self.list.pop(-1)
