@@ -22,7 +22,7 @@ class PQ_UL:
   return self.list.pop(0)
 
 class PQ_OL:
- def_init_(self):
+ def__init__(self):
   self.list[]
  def insert(self, item, priority):
   self.list.append(Entry(item,priority))
