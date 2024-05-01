@@ -1,5 +1,4 @@
 
-from BSTNode import BTSNode
 
 class BSTSet:
     def __init__(self):
