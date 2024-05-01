@@ -1,19 +1,19 @@
-def solve_puzzle(board, start, visited=None):
-    if visited is None:
-        visited = set()
 
-    if start == len(board) - 1:
-        return True
 
-    visited.add(start)
 
-    for move in [board[start], -board[start]]:
-        next_pos = (start + move) % len(board)
 
-        if next_pos in visited:
-            continue
-
-        if solve_puzzle(board, next_pos, visited):
-            return True
-
-    return False
+def solve_puzzle(title_L):
+      m_list = []
+      return solve_puzzle1(title_L, 0, m_list)
+def solve_puzzle1(title_L, index_v, m_list):
+      if index_v == len(title_L) -1:
+           return True
+      elif index_v in m_list:
+           return False
+      m_list.append(index_v)
+      clock_index =(index_v + title_L[index_v]) % len(title_L)
+      count_index =(index_v - title_L[index_v]) % len(title_L)
+      if solve_puzzle1(title_L, clock_index, m_list):
+       return True
+      m_list.remove(index_v)
+      return False
